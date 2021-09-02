@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page!</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl	text-center	mt-12	">Let's get some <span
+                class="font-semibold text-indigo-600	">Moooney</span>!!!</h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+        <section class="grid grid-cols-3 gap-4 mt-6 text-white">
+            <div class="bg-green-300 p-8 rounded">
+                <h3 class="text-2xl">Deposit</h3>
+                <h4 class="text-4xl">$<span id="deposit-total">00</span></h4>
+            </div>
+            <div class="bg-blue-300 p-8 rounded">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h4 class="text-4xl">$<span id="withdraw-total">00</span></h4>
+            </div>
+            <div class="bg-purple-300 p-8 rounded">
+                <h3 class="text-2xl">Balance</h3>
+                <h4 class="text-4xl">$<span id="balance-total">1200</span></h4>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw your amount -->
+        <section class="grid grid-cols-2 gap-4">
+            <div class="mt-4 bg-red-200 p-8 rounded">
+                <h3 class="text-3xl font-semibold">Deposite Here</h3>
+                <div class="mt-4">
+                    <p id="deposit-error" class="text-red-600"></p>
+                    <input class="border border-gray-400 rounded px-2 block w-3/4 mb-4" type="text" name=""
+                        placeholder="$ enter amount you want to deposit" id="deposit-input">
+
+                    <button id="deposit-btn"
+                        class="bg-yellow-600 px-4 py-2 rounded text-white font-semibold">Deposit</button>
+                </div>
+            </div>
+            <div class="mt-4 bg-pink-200 p-8 rounded">
+                <h3 class="text-3xl font-semibold">Withdraw Money</h3>
+                <div class="mt-4">
+                    <input class="border border-gray-400 rounded px-2 block w-3/4 mb-4" type="text" name=""
+                        placeholder="$ enter amount you want to withdraw" id="withdraw-input">
+                    <button id="withdraw-btn"
+                        class="bg-yellow-600 px-4 py-2 rounded text-white font-semibold">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/bakning.js"></script>
+</body>
+
+</html>
